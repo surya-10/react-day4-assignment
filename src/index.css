@@ -23,7 +23,7 @@ body{
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 30px;
   background:linear-gradient(to right, rgb(82, 82, 218), rgb(149, 38, 38));
   margin-bottom: 20px;
   
@@ -97,8 +97,12 @@ padding: 20px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: 20px;
-  
+}
+.stud:hover{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 30px;
+  margin-top: -3px;
 }
 .edit-del{
   width: 100%;
@@ -193,6 +197,66 @@ padding: 20px;
   background-color: rgb(234, 69, 102);
   color: white;
 }
+.full-profile{
+  border: none;
+  background:linear-gradient(to right, yellow, rgb(163, 107, 107));
+  padding: 5px;
+  border-radius: 5px;
+}
+.full-profile:hover{
+  background: linear-gradient(to left, yellow, rgb(163, 107, 107));
+}
+.student-profile{
+  position: relative;
+  width: 60%;
+  margin: 40px auto;
+  border: 1px solid pink;
+  padding: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  text-transform: uppercase;
+  justify-content: space-between;
+}
+.student-profile .details{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 10px;
+  margin-left: 20px;
+  /* gap: 20px; */
+
+}
+button .arrow{
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  padding: 15px;
+  background-color: rgb(163, 151, 151);
+  border-radius: 5px;
+  cursor: pointer;
+}
+button .arrow:hover{
+  background-color: rgb(200, 188, 188);
+}
+@media only screen and (max-width:695px){
+  .student-profile{
+    display: flex;
+    flex-direction: column;
+  }
+  .image img{
+    width: 80%;
+  }
+  .student-profile .details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    /* gap: 20px; */
+  
+  }
+}
 @media only screen and (max-width:626px){
   .btns button{
     font-size: 10px;
@@ -230,6 +294,13 @@ padding: 20px;
     outline: none;
     font-size: 12px;
   
+  }
+  .student-profile{
+    display: flex;
+    flex-direction: column;
+  }
+  .image img{
+    width: 80%;
   }
 }
 @media only screen and (max-width:380px){

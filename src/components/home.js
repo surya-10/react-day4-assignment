@@ -19,6 +19,9 @@ function Home({student, setStudent}){
         navigate(`/edit-user/${id}`)
 
     }
+    function viewProfile(id){
+      navigate(`/edit-profile/${id}`);
+    }
     return (
         <div className="home-div">
         <Base
@@ -35,10 +38,12 @@ function Home({student, setStudent}){
           {student.map((val, ind)=>(
             <div className='stud' key={ind}>
               <h3>{val.name}</h3>
-              <h4>Gender: {val.gender}</h4>
-              <h4>Education: {val.education}</h4>
-              <h4>Age: {val.age}</h4>
-              <h4>City: {val.city}</h4>
+              <p>Gender: {val.gender}</p>
+              <p>Education: {val.education}</p>
+              <p>Age: {val.age}</p>
+              <p>City: {val.city}</p>
+              <p>College: {val.college}</p>
+              <button className="full-profile" onClick={()=>viewProfile(val.id)}>View profile</button>
               <div className='edit-del'>
                 <button onClick={()=>sentToEdit(val.id)} className="add">Edit</button>
                 <button onClick={()=>deleteData(val.id)} className="del">Delete</button>

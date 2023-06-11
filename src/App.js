@@ -8,6 +8,7 @@ import EditStudent from './components/editStudents';
 import Comp from './components/comp';
 import { Route, Router, Routes } from 'react-router-dom';
 import Home from './components/home';
+import Profile from './components/profile';
 
 function App() {
   let [student, setStudent] = useState(data);
@@ -29,7 +30,10 @@ function App() {
         <Route path='edit-user/:id' element={<EditStudent
         student={student}
         setStudent={setStudent}/>}/>
-
+        <Route path='edit-profile/:id' element={<Profile
+        student={student}
+        setStudent={setStudent}
+        />}/>
       </Routes>
       {/* <Base
       title={"Welcome to my page"}

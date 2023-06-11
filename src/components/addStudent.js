@@ -10,6 +10,7 @@ function AddStudent({student, setStudent}){
     let [age, setAge] = useState("");
     let [city, setCity] = useState("");
     let [education, setEducation] = useState("");
+    let [college, setCollege] = useState("");
     console.log(name)
 
     function createNewStud(){
@@ -19,7 +20,8 @@ function AddStudent({student, setStudent}){
             age,
             city,
             education,
-            id:studId
+            id:studId,
+            college
         }
         setStudent([...student, obj]);
         setStudId("");
@@ -28,6 +30,7 @@ function AddStudent({student, setStudent}){
         setEducation("");
         setCity("");
         setGender("");
+        setCollege("");
         navigate("/home")
 
     }
@@ -57,6 +60,10 @@ function AddStudent({student, setStudent}){
                 <input type="number" placeholder="Enter your ID"
                 value={studId}
                 onChange={(e)=>setStudId(e.target.value)}/>
+                <input type="text" placeholder="Enter your college name"
+                value={college}
+                onChange={(e)=>setCollege(e.target.value)}
+                />
             </div>
             <button onClick={createNewStud}>Create</button>
             

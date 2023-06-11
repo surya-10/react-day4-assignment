@@ -11,6 +11,7 @@ function EditStudent({student, setStudent}){
     let [age, setAge] = useState("");
     let [city, setCity] = useState("");
     let [education, setEducation] = useState("");
+    let [college, setCollege] = useState("");
     console.log(name)
     console.log(id);
 
@@ -23,6 +24,7 @@ function EditStudent({student, setStudent}){
         setEducation(datas.education);
         setGender(datas.gender);
         setCity(datas.city);
+        setCollege(datas.college)
         }
     }, [id, student])
 
@@ -34,7 +36,8 @@ function EditStudent({student, setStudent}){
             city,
             education,
             gender,
-            id:studId
+            id:studId,
+            college
         }
         
         console.log(ind);
@@ -68,6 +71,10 @@ function EditStudent({student, setStudent}){
                 <input type="number" placeholder="Enter your ID"
                 value={studId}
                 onChange={(e)=>setStudId(e.target.value)}/>
+                <input type="text" placeholder="Enter your college name"
+                value={college}
+                onChange={(e)=>setCollege(e.target.value)}
+                />
             </div>
             <button className="update" onClick={updateData}>Update</button>
         </div>

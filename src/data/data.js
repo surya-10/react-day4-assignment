@@ -4,7 +4,9 @@ export const data = [{
     "education":"BE",
     "city":"Salem",
     "gender":"Male",
-    "id":1
+    "id":1,
+    "college":"SCT",
+    "year":2020
 },
 {
     "name":"Prakash",
@@ -12,7 +14,9 @@ export const data = [{
     "education":"BSC",
     "city":"Madurai",
     "gender":"Male",
-    "id":2
+    "id":2,
+    "college":"SCT",
+    "year":2019
 },
 {
     "name":"Arthy",
@@ -20,7 +24,9 @@ export const data = [{
     "education":"BSC",
     "city":"Salem",
     "gender":"Female",
-    "id":3
+    "id":3,
+    "college":"PSG",
+    "year":2021
 },
 {
     "name":"Pavi",
@@ -28,7 +34,9 @@ export const data = [{
     "education":"D.Pharm",
     "city":"Chennai",
     "gender":"Female",
-    "id":4
+    "id":4,
+    "college":"KSR",
+    "year":2018
 },
 {
     "name":"Ajith",
@@ -36,14 +44,18 @@ export const data = [{
     "education":"BTech",
     "city":"Coimbatore",
     "gender":"Male",
-    "id":5
+    "id":5,
+    "college":"Hindustan",
+    "year":2020
 },
 {
     "name":"Vijay",
     "age":39,
     "education":"BSC",
     "city":"Tanjore",
-    "gender":"Male",
-    "id":6
+    "gender":"Prist",
+    "id":6,
+    "college":"AVS",
+    "year":2016
 }
 ]

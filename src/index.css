@@ -11,3 +11,234 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+body{
+  background-color: rgb(255, 255, 255);
+}
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.nav{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background:linear-gradient(to right, rgb(82, 82, 218), rgb(149, 38, 38));
+  margin-bottom: 20px;
+  
+}
+.nav h2{
+  color: beige;
+  text-transform: uppercase;
+}
+.btns{
+  display: flex;
+  flex-direction: row;
+
+  gap: 15px;
+  
+}
+.btns button{
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 10px 5px;
+  outline: none;
+  /* border: 1px solid black; */
+  border: none;
+  background-color: rgb(218, 218, 183);
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  color: rgb(24, 24, 24);
+}
+.main .title{
+  margin-bottom: 20px;
+  font-size: 33px;
+  text-transform: uppercase; 
+  font-weight: 700;
+padding: 20px;
+}
+.child-div{
+  padding: 20px;
+  background: linear-gradient(to right, rgb(183, 20, 159),grey, crimson,rgb(28, 29, 125));
+  color: transparent;
+  background-clip: text;
+}
+.child-div .para{
+  font-size: 20px;
+}
+.btns button:hover{
+  background-color: black;
+  color: white;
+}
+.students{
+  width: 80%;
+  margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  gap: 36px;
+}
+.child{
+  background-color: white; 
+}
+.stud{
+  color: rgb(39, 33, 33);
+  border: 1px solid greenyellow;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 250px;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  
+}
+.edit-del{
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+  flex-direction: row;
+  justify-content: space-between; 
+}
+.base-div{
+  margin-bottom: 20px;
+}
+.edit-del .add{
+  padding: 8px 15px;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(109, 153, 51);
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-size: 15px;
+}
+.edit-del .add:hover{
+  background-color: rgb(167, 218, 100);
+  color: white;
+}
+.add-stud h4{
+  margin-top: 20px;
+  text-transform: uppercase;
+  width: 50%;
+  margin:  0 auto;
+  background-color: rgb(122, 118, 118);
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  /* text-decoration: underline; */
+}
+.add-stud{
+  margin-top:30px;
+  width: 80%;
+  margin: 10px auto;
+}
+.form{
+  margin: 15px;
+  margin-top: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  
+}
+.form input{
+  width: 80%;
+  padding: 12px 15px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  outline: none;
+  font-size: 15px;
+
+}
+.add-stud button{
+  color: white;
+  background-color: green;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+}
+.edit-stud button{
+  color: white;
+  background-color: black;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+}
+.comp-div{
+  color: black;
+  width: 100%; 
+}
+.del{
+  background-color: crimson;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.del:hover{
+  background-color: rgb(234, 69, 102);
+  color: white;
+}
+@media only screen and (max-width:626px){
+  .btns button{
+    font-size: 10px;
+    padding: 5px 3px;
+    font-weight: 400;
+
+  }
+  .btns{
+    gap: 5px;
+  }
+  .main .title{
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-transform: uppercase; 
+    font-weight: 700;
+    padding: 20px;
+  }
+  .main .para{
+    font-size: 15px;
+  }
+  .nav h2{
+    font-size: 15px;
+  }
+  .nav{
+    padding: 20px 5px;
+  }
+  .add-stud h4{
+    width: 70%;
+  }
+  .form input{
+    width: 100%;
+    padding: 8px 6px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    outline: none;
+    font-size: 12px;
+  
+  }
+}
+@media only screen and (max-width:380px){
+  .nav h2{
+    font-size: 11px;
+  }
+  .btns button{
+    font-size: 10px;
+    padding: 4px;
+  }
+}
+

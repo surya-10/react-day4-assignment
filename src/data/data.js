@@ -1,0 +1,49 @@
+export const data = [{
+    "name":"Surya",
+    "age":24,
+    "education":"BE",
+    "city":"Salem",
+    "gender":"Male",
+    "id":1
+},
+{
+    "name":"Prakash",
+    "age":36,
+    "education":"BSC",
+    "city":"Madurai",
+    "gender":"Male",
+    "id":2
+},
+{
+    "name":"Arthy",
+    "age":20,
+    "education":"BSC",
+    "city":"Salem",
+    "gender":"Female",
+    "id":3
+},
+{
+    "name":"Pavi",
+    "age":22,
+    "education":"D.Pharm",
+    "city":"Chennai",
+    "gender":"Female",
+    "id":4
+},
+{
+    "name":"Ajith",
+    "age":43,
+    "education":"BTech",
+    "city":"Coimbatore",
+    "gender":"Male",
+    "id":5
+},
+{
+    "name":"Vijay",
+    "age":39,
+    "education":"BSC",
+    "city":"Tanjore",
+    "gender":"Male",
+    "id":6
+}
+]

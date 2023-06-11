@@ -13,7 +13,7 @@ function Profile({student, setStudent}){
     return (
         <div className="profile">
             <div className="student-profile" key={data.id}>
-                <button onClick={goToHome}><i className="fa-sharp fa-solid fa-arrow-left arrow"></i></button>
+                <p><i className="fa-sharp fa-solid fa-arrow-left arrow" onClick={goToHome}></i></p>
                 <div className="image">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRajDW83phQCh31Jd2x3NXQJn8xQjyARdxGlEt6a7iUUznDp0nQuSxxnagaGEjoiYHqpaA&usqp=CAU"/>
                 </div>

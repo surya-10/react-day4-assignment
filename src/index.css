@@ -227,7 +227,7 @@ padding: 20px;
   /* gap: 20px; */
 
 }
-button .arrow{
+p .arrow{
   position: absolute;
   left: 5px;
   top: 5px;
@@ -236,7 +236,7 @@ button .arrow{
   border-radius: 5px;
   cursor: pointer;
 }
-button .arrow:hover{
+p .arrow:hover{
   background-color: rgb(200, 188, 188);
 }
 @media only screen and (max-width:695px){

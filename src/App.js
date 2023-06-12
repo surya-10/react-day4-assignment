@@ -9,6 +9,7 @@ import Comp from './components/comp';
 import { Route, Router, Routes } from 'react-router-dom';
 import Home from './components/home';
 import Profile from './components/profile';
+import Nopage from './components/nopage';
 
 function App() {
   let [student, setStudent] = useState(data);
@@ -34,33 +35,9 @@ function App() {
         student={student}
         setStudent={setStudent}
         />}/>
+        <Route path='*' element={<Nopage/>}/>
       </Routes>
-      {/* <Base
-      title={"Welcome to my page"}
-      description={"You can all registered students data"}>
-        <AddStudent
-        student={student}
-        setStudent={setStudent}/>
-        <EditStudent
-        student={student}
-        setStudent={setStudent}
-        editId={editId}/>
-        <div className='students'>
-          {student.map((val, ind)=>(
-            <div className='stud' key={ind}>
-              <h3>{val.name}</h3>
-              <h4>Gender: {val.gender}</h4>
-              <h4>Education: {val.education}</h4>
-              <h4>Age: {val.age}</h4>
-              <h4>City: {val.city}</h4>
-              <div className='edit-del'>
-                <button onClick={()=>setEditId(val.id)}>Edit</button>
-                <button onClick={()=>deleteData(val.id)}>Delete</button>
-                </div>
-              </div>
-          ))}
-        </div>
-        </Base> */}
+      
     </div>
   )
 }

@@ -217,6 +217,27 @@ padding: 20px;
   text-transform: uppercase;
   justify-content: space-between;
 }
+.no-page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: darkcyan;
+  flex-direction: column;
+}
+.no-page button{
+  border: none;
+  padding: 10px;
+  text-transform: uppercase;
+  background-color: antiquewhite;
+  border-radius: 5px;
+}
+.no-page p{
+  color: white;
+  font-size: 20px;
+  margin: 20px;
+}
 .student-profile .details{
   display: flex;
   flex-direction: column;

@@ -23,7 +23,9 @@ function Profile({student, setStudent}){
                     <p>Gender: {data.gender}</p>
                     <p>Education: {data.education}</p>
                     <p>College: {data.college}</p>
-                    <p>Passed out: {data.year}</p>
+                    {data.year ?
+                    <p>Passed out: {data.year}</p> :<p>Passed out: 2019</p>
+}
                     
                     <p>City: {data.city}</p>
                 </div>

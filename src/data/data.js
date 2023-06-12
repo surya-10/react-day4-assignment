@@ -53,9 +53,9 @@ export const data = [{
     "age":39,
     "education":"BSC",
     "city":"Tanjore",
-    "gender":"Prist",
+    "gender":"Male",
     "id":6,
-    "college":"AVS",
+    "college":"Prist",
     "year":2016
 }
 ]
